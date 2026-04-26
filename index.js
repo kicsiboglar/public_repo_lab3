@@ -1,5 +1,5 @@
 const    nr   =  42
 function  test ( ) {
-    console.log(   "very ugly code" )
+    console.log(   "very very ugly code" )
 }
 test();
