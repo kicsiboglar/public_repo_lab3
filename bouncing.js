@@ -1,8 +1,8 @@
-var img_element = document.getElementById("bouncing-image");
-var x_coord = 20;
-var y_coord = 20;
-var x_speed = 5;
-var y_speed = 5;
+let img_element = document.getElementById("bouncing-image");
+let x_coord = 20;
+let y_coord = 20;
+let x_speed = 5;
+let y_speed = 5;
 
 function run_animation_loop() {
   var window_w = window.innerWidth;
