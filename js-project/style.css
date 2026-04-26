@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #2c3e50; /* Sötétebb, komolyabb háttér */
+  font-family: "Courier New", Courier, monospace; /* Infósabb betűtípus */
+  overflow: hidden; /* Hogy ne legyen görgetősáv a részecskék miatt */
+}
+
+/* Új stílus a háttér canvas-hoz */
+#particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Hátul */
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* Kicsit átlátszóbb */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 10; /* Elöl */
+  position: relative;
+  max-width: 400px;
+}
+
+.cookie {
+  font-size: 80px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+#bouncing-image {
+  position: absolute;
+  width: 80px; /* Mekkora legyen a logó? */
+  height: 80px;
+  z-index: 2; /* A részecskék felett, de a szöveg alatt */
+  pointer-events: none; /* Ne lehessen rákattintani, ne zavarja a gombot */
+}
