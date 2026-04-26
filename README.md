@@ -30,3 +30,5 @@ A következő feladathoz fog kelleni egy JS/TS projekt. Lehet használni más ta
 8. (3 pont) Ezt a kódkupacot kösse be SonarCube alá. Ideális esetben a community buildet használja innen (https://www.sonarsource.com/products/sonarqube/downloads/). Ha a StartSonar paranccsal nem indulna valamiért el a Sonar, ne küzdjünk a megjavítással, használjuk a Sonar Cloud ingyenes megoldását az analízisre (egy screenshot a SonarCube indulási hibájáról kell ebben az esetben ide a readme-be). - A readme-ben mutassa meg az össesítő oldalát a kódoknak, amiket bekötött a Sonar alá.
 
 9. (3 pont) Elemezze a Sonar által talált hibákat. Válassza ki a legfontosabbnak ítélt problémát, javítsa ki, majd az újabb analízissel igazolja a javulást a dokumentációban. Egy screenshot-t ide a readme-be a hibáról a Sonar oldalán.
+![9_before.png](9_before.png)
+![9_after.png](9_after.png)
